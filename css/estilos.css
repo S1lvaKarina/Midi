@@ -4,11 +4,11 @@
   --vermelha-escura: #af303f;
   --branca: #fff;
   --luz: rgb(229, 255, 0);
+  --preto:#000000;
 }
-
 body {
   align-items: center;
-  background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%);
+  background: linear-gradient(45deg, #cedfa7 0%,#13aa89 100%);
   display: flex;
   justify-content: center;
   flex-direction: column;
