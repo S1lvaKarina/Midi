@@ -26,5 +26,31 @@ function tocaSomPuff () {
     }
     document.querySelector("tecla_puff").onclick = tocaSomPuff;
     
+//tecla splash
+function tocaSomSplash () {
+    document.querySelector("#Som_Tecla_Splash").play()
+
+    }
+    document.querySelector("tecla_Splash").onclick = tocaSomSplash;
+    
+//tecla toin
+function tocaSomToin () {
+    document.querySelector("#Som_Tecla_Toin").play();
+    
+    }
+    document.querySelector("tecla_toin").onclick = tocaSomToin;
+    
+//tecla psh
+function tocaSomPsh () {
+    document.querySelector("#Som_Tecla_Psh").play();
+    
+    }
+    document.querySelector("tecla_psh").onclick = tocaSomPsh;
+    
+
+
+
+
+
 
 
