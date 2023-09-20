@@ -47,10 +47,20 @@ function tocaSomPsh () {
     }
     document.querySelector("tecla_psh").onclick = tocaSomPsh;
     
-
-
-
-
+//tecla tic
+function tocaSomTic () {
+    document.querySelector("#Som_Tecla_Tic").play();
+    
+    }
+    document.querySelector("tecla_tic").onclick = tocaSomTic;
+    
+//tecla tom
+function tocaSomTom () {
+    document.querySelector("#Som_Tecla_Tom").play();
+    
+    }
+    document.querySelector("tecla_tom").onclick = tocaSomTom;
+    
 
 
 
