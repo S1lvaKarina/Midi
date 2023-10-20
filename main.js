@@ -61,10 +61,18 @@ function tocaSomTom () {
     }
     document.querySelector("tecla_tom").onclick = tocaSomTom;
 */
-
+//20/10 variáveis
 function tocaSomPom () {
     document.querySelector("#Som_Tecla_Pom").play();
     }
 
-const  ListaDeTeclas = document.querySelectorAll('.tecla')
-ListaDeTeclas[0].onclik = tocaSomPom;
+const  listaDeTeclas = document.querySelectorAll('.tecla')
+listaDeTeclas[0].onclik = tocaSomPom;
+listaDeTeclas[1].onclik = tocaSomClap;
+listaDeTeclas[2].onclik = tocaSomTim;
+listaDeTeclas[3].onclik = tocaSomPuff;
+listaDeTeclas[4].onclik = tocaSomSplash;
+listaDeTeclas[5].onclik = tocaSomToim;
+listaDeTeclas[6].onclik = tocaSomPsh;
+listaDeTeclas[7].onclik = tocaSomtic;
+listaDeTeclas[8].onclik = tocaSomTom;
