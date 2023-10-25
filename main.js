@@ -70,8 +70,8 @@ function tocaSomPom () {
         document.querySelector("#Som_Tecla_Pom").play();
         }
 
-        
-const  listaDeTeclas = document.querySelectorAll('.tecla')
+
+const  listaDeTeclas = document.querySelectorAll('.tecla');
 listaDeTeclas[0].onclik = tocaSomPom;
 listaDeTeclas[1].onclik = tocaSomClap;
 listaDeTeclas[2].onclik = tocaSomTim;
