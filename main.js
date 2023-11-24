@@ -62,13 +62,13 @@ function tocaSomTom () {
     document.querySelector("tecla_tom").onclick = tocaSomTom;
 */
 //20/10 variáveis
-function tocaSomPom () {
+/*function tocaSomPom () {
     document.querySelector("#Som_Tecla_pom").play();
     }
 
 function tocaSomClap () {
     document.querySelector("#som_tecla_clap").play();
-        }
+}
 
 function tocaSomTim () {
     document.querySelector("#som_tecla_tim").play();
@@ -107,7 +107,50 @@ listaDeTeclas[4].onclik = tocaSomSplash;
 listaDeTeclas[5].onclik = tocaSomToim;
 listaDeTeclas[6].onclik = tocaSomPsh;
 listaDeTeclas[7].onclik = tocaSomtic;
-listaDeTeclas[8].onclik = tocaSomTom;
+listaDeTeclas[8].onclik = tocaSomTom;*/
+
+
+function tocaSom (seletorAudio) {
+    const elemento = document.querySelector(seletorAudio);
+
+    if (elemento && elemento.localName === 'audio') {
+        elemento.play();
+    }
+    else {
+        //alert('Elemento não encontrado');
+        console.log('Elemento não encontrado ou seletor inválido');
+    }
+
+}
+
+const listaDeTeclas = document.querySelectorAll('.tecla');
+
+//para
+for (let contador = 0; contador < listaDeTeclas.length; contador++) {
+
+    const tecla = listaDeTeclas[contador];
+    const instrumento = tecla.classList[1];
+    const idAudio = `#som_${instrumento}`; //template string
+
+    tecla.onclick = function () {
+        tocaSom(idAudio);
+    }
+
+ //eventos do teclado onkeydowne onkeyup.
+ //adicionar e remover classes em um elemento HTML através do JavaScript, com as funções add e remove do classList.   
+    tecla.onkeydown = function (evento) {
+
+        if (evento.code === 'Space' || evento.code === 'Enter') {
+            tecla.classList.add('ativa');
+        }
+
+    }
+
+    tecla.onkeyup = function () {
+        tecla.classList.remove('ativa');
+    }
+
+}
 
 
 
